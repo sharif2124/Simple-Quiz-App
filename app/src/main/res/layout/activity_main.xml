@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+   android:gravity="center"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+<TextView
+    android:layout_marginTop="5dp"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:text="@string/text"
+    android:textSize="35dp"
+    android:textStyle="bold"
+    android:gravity="center"
+
+    />
+    <RadioGroup
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/radiogroupid">
+
+        <RadioButton
+            android:id="@+id/radiobutton1id"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/option1"
+            android:textSize="35dp"
+            android:textStyle="bold"
+            />
+        <RadioButton
+            android:id="@+id/radiobutton2id"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/option2"
+            android:textSize="35dp"
+            android:textStyle="bold"
+            />
+        <RadioButton
+            android:id="@+id/radiobutton3id"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/option3"
+            android:textSize="35dp"
+            android:textStyle="bold"
+            />
+        <RadioButton
+            android:id="@+id/radiobutton4id"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/option4"
+            android:textSize="35dp"
+            android:textStyle="bold"
+            />
+
+    </RadioGroup>
+    <Button
+        android:id="@+id/submitbuttonid"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/button"
+        android:onClick="submitfunction"
+        android:textSize="35dp"
+        android:textStyle="bold"
+
+        />
+
+</LinearLayout>
