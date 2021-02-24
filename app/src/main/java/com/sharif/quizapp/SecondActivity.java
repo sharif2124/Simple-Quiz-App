@@ -6,28 +6,48 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
+import android.widget.RadioButton;
+import android.widget.RadioGroup;
 import android.widget.TextView;
 
 public class SecondActivity extends AppCompatActivity {
-TextView outputtextview;
-Button tryagainbutton;
+    RadioGroup myradiogroup;
+    RadioButton myradiobuttonid;
+    int marks =5;
+    public static String marksextradata="I am from first activity";
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_second);
-        tryagainbutton = (Button)findViewById(R.id.tryagainbuttonid);
-        outputtextview=(TextView)findViewById(R.id.outputtextviewid);
-        Intent myoutputintent = getIntent();
-        int outmarks = myoutputintent.getIntExtra(MainActivity.marksextradata,0);
-        if(outmarks==5){
-            outputtextview.setText("Your answer is correct and your marks is : 5");
-        }else {
-            outputtextview.setText("Your answer is false and your marks is : 0");
-        }
+        myradiogroup = (RadioGroup) findViewById(R.id.radiogroupid);
+
     }
 
-    public void tryagainfunction(View view) {
-     Intent mynewIntent = new Intent(SecondActivity.this,MainActivity.class);
-     startActivity(mynewIntent);
+
+
+    public void submitfunction(View view) {
+        int selectradiobuttonid = myradiogroup.getCheckedRadioButtonId();
+        myradiobuttonid = findViewById(selectradiobuttonid);
+        if(myradiobuttonid.getText().toString().equals("Google")){
+            marks=10;
+            Intent myintent = new Intent(SecondActivity.this,Activity3.class);
+            myintent.putExtra(marksextradata,marks);
+            startActivity(myintent);
+        }
+
+
+
+
+        else{
+            marks=0;
+            Intent myintent = new Intent(SecondActivity.this,Activity3.class);
+            myintent.putExtra(marksextradata,marks);
+            startActivity(myintent);
+
+        }
+
+
     }
-}
+
+    }
+

@@ -19,9 +19,12 @@ public static String marksextradata="I am from first activity";
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         myradiogroup = (RadioGroup) findViewById(R.id.radiogroupid);
+
     }
 
-    public void submitfunction(View view) {
+
+
+    public void nextfunction(View view) {
         int selectradiobuttonid = myradiogroup.getCheckedRadioButtonId();
         myradiobuttonid = findViewById(selectradiobuttonid);
         if(myradiobuttonid.getText().toString().equals("Dhaka")){

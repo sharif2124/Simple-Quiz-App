@@ -57,11 +57,11 @@
 
     </RadioGroup>
     <Button
-        android:id="@+id/submitbuttonid"
+        android:id="@+id/nextbuttonid"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="@string/button"
-        android:onClick="submitfunction"
+        android:onClick="nextfunction"
         android:textSize="35dp"
         android:textStyle="bold"
 

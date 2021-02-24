@@ -5,6 +5,12 @@
     <string name="option2">Rajshahi</string>
     <string name="option3">Khulna</string>
     <string name="option4">Sylhet</string>
-    <string name="button">Submit</string>
+    <string name="button">Next</string>
+    <string name="button1">Submit</string>
     <string name="button2">Try Again</string>
+    <string name="text2">who is the ownar of android os</string>
+    <string name="option5">Google</string>
+    <string name="option6">Walton</string>
+    <string name="option7">Apple</string>
+    <string name="option8">Huwaei</string>
 </resources>

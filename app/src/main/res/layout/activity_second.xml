@@ -9,21 +9,62 @@
     tools:context=".SecondActivity">
 
     <TextView
-        android:id="@+id/outputtextviewid"
+        android:layout_marginTop="5dp"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:text="@string/text2"
+        android:textSize="35dp"
         android:textStyle="bold"
-        android:textSize="25dp"
+        android:gravity="center"
+
         />
-    <Button
-        android:id="@+id/tryagainbuttonid"
-        android:layout_marginTop="40dp"
+    <RadioGroup
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="@string/button2"
-        android:onClick="tryagainfunction"
+        android:id="@+id/radiogroupid">
+
+        <RadioButton
+            android:id="@+id/radiobutton1id"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/option6"
+            android:textSize="35dp"
+            android:textStyle="bold"
+            />
+        <RadioButton
+            android:id="@+id/radiobutton2id"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/option7"
+            android:textSize="35dp"
+            android:textStyle="bold"
+            />
+        <RadioButton
+            android:id="@+id/radiobutton3id"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/option8"
+            android:textSize="35dp"
+            android:textStyle="bold"
+            />
+        <RadioButton
+            android:id="@+id/radiobutton4id"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/option5"
+            android:textSize="35dp"
+            android:textStyle="bold"
+            />
+
+    </RadioGroup>
+    <Button
+        android:id="@+id/submitbuttonid"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/button1"
+        android:onClick="submitfunction"
+        android:textSize="35dp"
         android:textStyle="bold"
-        android:textSize="25dp"
 
         />
 
